@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GTA VI Trophy Guide — All 55 Trophies, Roadmap &amp; Tracker</title>
+<meta name="description" content="The complete Grand Theft Auto VI trophy guide: all 55 PS5 trophies with how-to guides, sources, a platinum roadmap, missable warnings and a progress tracker.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="hero">
+  <div class="hero-text">
+    <p class="kicker">Grand Theft Auto VI &middot; PlayStation 5 &middot; Launch week, updated 20 Nov 2026</p>
+    <h1>Leonida Trophy Guide</h1>
+    <p class="sub">Every one of the 55 trophies — what to do, where, how, and what you can miss — with a tracker that remembers your progress.</p>
+  </div>
+  <div class="hero-stats" id="heroStats" aria-label="Trophy totals"></div>
+</header>
+
+<section class="progress-wrap" aria-label="Your progress">
+  <div class="progress-head">
+    <strong id="progressText">0 of 55 earned</strong>
+    <span id="progressPct">0%</span>
+  </div>
+  <div class="progress-bar"><div id="progressFill"></div></div>
+  <div class="progress-actions">
+    <button id="export" type="button">Export progress</button>
+    <label class="import">Import progress <input id="import" type="file" accept="application/json"></label>
+    <button id="reset" type="button">Reset</button>
+  </div>
+</section>
+
+<nav class="tabs" aria-label="Guide sections">
+  <button type="button" data-tab="checklist" class="active">Checklist</button>
+  <button type="button" data-tab="roadmap">Platinum roadmap</button>
+  <button type="button" data-tab="completion">100% completion</button>
+  <button type="button" data-tab="sources">Sources &amp; notes</button>
+</nav>
+
+<section id="tab-checklist" class="tab active">
+  <div class="missable-banner" role="note">
+    <strong>⚠ The one missable trophy:</strong> <span id="missableBanner"></span>
+  </div>
+  <div class="controls">
+    <input id="search" type="search" placeholder="Search trophies…" aria-label="Search trophies">
+    <label>Kind
+      <select id="kind">
+        <option value="all">All kinds</option>
+        <option value="story">Story</option>
+        <option value="missable">Missable</option>
+        <option value="collectibles">Collectibles</option>
+        <option value="activities">Activities</option>
+        <option value="crime">Crime</option>
+        <option value="strangers">Strangers</option>
+        <option value="exploration">Exploration</option>
+        <option value="misc">Misc</option>
+      </select>
+    </label>
+    <label>Grade
+      <select id="grade">
+        <option value="all">All grades</option>
+        <option value="platinum">Platinum</option>
+        <option value="gold">Gold</option>
+        <option value="silver">Silver</option>
+        <option value="bronze">Bronze</option>
+      </select>
+    </label>
+    <label class="check"><input id="hideEarned" type="checkbox"> Hide earned</label>
+    <label class="check"><input id="spoilers" type="checkbox" checked> Hide story spoilers</label>
+  </div>
+  <p id="countLine" class="count-line"></p>
+  <div id="cards" class="cards"></div>
+  <p id="emptyLine" class="empty" hidden>No trophies match these filters.</p>
+</section>
+
+<section id="tab-roadmap" class="tab">
+  <h2>Road to the platinum</h2>
+  <p class="lede" id="roadmapLede"></p>
+  <div id="roadmapStages" class="stages"></div>
+  <h3>Platinum facts</h3>
+  <dl id="platinumFacts" class="facts"></dl>
+</section>
+
+<section id="tab-completion" class="tab">
+  <h2>100% completion — “A Long Road”</h2>
+  <p class="lede">“100%” does not mean literally everything. Each category below only needs the share listed — do the required part, then move on. Full detail lives in the trophy guide for <strong>A Long Road</strong> in the checklist.</p>
+  <div id="completionGroups" class="completion"></div>
+</section>
+
+<section id="tab-sources" class="tab">
+  <h2>Sources &amp; notes</h2>
+  <p class="lede">Every trophy guide in this app is written in our own words for this guide. The facts come from the sources below; each trophy names its sources beside its guide, so you can check any claim. Trophy names and descriptions are shown exactly as PlayStation publishes them.</p>
+  <ul id="sourceList" class="sources"></ul>
+  <h3>How to read this guide</h3>
+  <ul class="notes">
+    <li><strong>Unconfirmed</strong> means the launch-week guides had not yet confirmed a method. We say so plainly instead of inventing one — check the linked sources for updates.</li>
+    <li><strong>Hidden trophies</strong> (28 of 55) stay hidden on PlayStation until you earn them. The spoiler setting hides story-trophy names and descriptions until you tick them earned.</li>
+    <li><strong>Cheats</strong> disable trophies and saving for that session — keep them off on a trophy run.</li>
+    <li>There are <strong>no online trophies</strong> and no difficulty-related trophies. One playthrough is enough, and free roam continues after the final mission.</li>
+  </ul>
+</section>
+
+<footer>
+  <p>An unofficial fan guide. Grand Theft Auto and GTA are trademarks of Take-Two Interactive; this guide is not affiliated with or endorsed by Rockstar Games. Trophy names and descriptions are reproduced as published by PlayStation.</p>
+</footer>
+<script type="module" src="app.js"></script>
+</body>
+</html>

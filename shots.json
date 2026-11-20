@@ -1,0 +1,6 @@
+[
+  { "file": "1-checklist.jpg", "path": "/?demo=1&spoilers=off", "viewport": { "width": 1280, "height": 800 } },
+  { "file": "2-guide.jpg", "path": "/?demo=1&spoilers=off&kind=missable&open=28", "viewport": { "width": 1280, "height": 1400 } },
+  { "file": "3-roadmap.jpg", "path": "/?tab=roadmap&demo=1", "viewport": { "width": 1280, "height": 1050 } },
+  { "file": "4-spoilers.jpg", "path": "/?demo=1", "viewport": { "width": 1280, "height": 800 } }
+]
